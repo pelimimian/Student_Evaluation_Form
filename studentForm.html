@@ -1,0 +1,60 @@
+<div id = "container">
+    <h1 id = "title">
+      Student Evaluation Form </h1>
+    <p id = "description">
+      This Evaluation Form is to help understand and evaluation students performance in the classroom. The goal is to help the Student to succeed in their education.</p>
+    <!-- There is an input tag called required where you the user must enter a value, or the submit button will not work"-->
+    <form id = "survey-form" target="_blank" method = "get"  action="https://codepen.io/PhoenixCoder/full/YOexvB/">
+      <div id = "name-ID-email-container">
+        <label for="name" id ="name-label">Student's Name</label>
+        <br/>
+        <input type="text" id="name" name="name" placeholder="Enter Full Name" required>
+        <br/><br/>
+        <label for="number" id ="number-label">Student's  ID</label>
+        <!--Change the input type to number. To only allow numbers entered in the input, use a pattern attribute with the regex ^[0-9]+$. Review regex. Also to there is a max and min attribute will allow a minimum and maximum amount of numbers allowed to be entered in the ipnut -->
+        <br/>
+        <input type="number" id="number" name="number" placeholder= "Up to 9 Digits" pattern = "^[0-9]+$" title = "Numbers Only" min = "0" max ="999999999" required>
+        <br/><br/>
+        <label for="email" id ="email-label">Email</label>
+        <br/>
+        <!--For type it must be type="email" -->
+        <input type="email" id="email" name="email" placeholder="Enter Your Email" required>
+        </br></br>                      
+    </div>
+      <div id = "radio_checkbox_dropdown_container">
+        <div id = "radioSelection">
+          <label for="gender">Select Gender</label>
+          <br/>
+          <input type="radio" name="gender" value="male"> Male<br>
+          <input type="radio" name="gender" value="female"> Female<br>
+          <input type="radio" name="gender" value="other"> Other
+        </div>
+        <div id = "selectCheckbox">
+          <label for="name">Select Preferred Subject(s)</label><br/>
+          <input type="checkbox" name="math" value="Math">Math<br>
+          <input type="checkbox" name="english" value="English">English<br/>
+          <input type="checkbox" name="science" value="Science">Science<br/>
+           <input type="checkbox" name="music" value="music">Music<br/>
+           <input type="checkbox" name="art" value="art">Art<br/> 
+        </div>
+          <div id = "dropdown">
+          <label for="selectTrait">Select a Preferred Learning Style</label>
+            <br/>
+            <select id = "dropdown_section">
+              <option value="selectPlaceholder">Select One</option>
+              <option value="visual_learner">Visual Learner</option>
+              <option value="audio_learner">Audio Learner</option>
+              <option value="physical_learner">Doing It Yourself</option>
+              <option value="social_learner">Working in a Group</option>
+            </select>
+          </div>
+        </div>
+      <div id = "textArea_container">
+        <label>Comments</label>
+        <br/><br/>
+        <textarea id = "comments_textArea" placeholder= "Enter any addtional comments"></textarea>
+      </div>
+    <br/><br/>
+    <button id = "submit" type="submit">Submit</button>
+    </form>
+  </div>

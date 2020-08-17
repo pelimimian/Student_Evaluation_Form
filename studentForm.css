@@ -1,0 +1,74 @@
+body{
+    background-color:#CCE5FF;  
+    }
+    #container{
+      /*Text Color */
+      color: black;
+      font-size: 1.5em;
+      text-align: center;
+    
+    }
+    #title{
+      font-size: 2em;
+    }
+    
+    #description{
+      font-style: italic;
+      text-align: center;
+    }
+    #name-ID-email-container{
+    
+    }
+    /*Add borders to move the sky blue background of the form to be more center*/
+    #survey-form{
+      background-color: #CCF7FF;
+      border-style: solid;
+      border-width: 3em;
+      border-color: #CCE5FF;
+        /*Making the font-size responsvie by chagning the px to 2vw*/
+      font-size: 2vw;
+    }
+    #name{
+      text-align: left;
+      font-size: 0.6em;
+    }
+    #name-label{
+     text-align: center;
+    }
+    #number{
+      font-size: 0.6em;
+    }
+    #email{
+      font-size: 0.6em;
+    }
+    #radio_checkbox_dropdown_container{
+      display: flex;
+      flex-direction: row;
+      justify-content:center;
+    
+    }
+    #radioSelection{
+    text-align: left;
+    }
+    #selectCheckbox{
+      padding-left: 5%;
+      text-align:left;
+    }
+    #dropdown{
+      padding-left: 5%;
+    }
+    #dropdown_section{
+        font-size: 0.7em;
+    }
+    #textArea_container{
+     padding-top: 5%;
+    }
+    #comments_textArea{
+      /*There is a function called calc in which can caluclate px for you. In this case it takes 100%  width and substracts it by 45px*/
+      width: calc(100% - 45px);
+      height: 100px;
+      resize: none;
+    }
+    #submit{
+     font-size: 0.8em;
+    }    
